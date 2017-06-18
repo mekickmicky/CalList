@@ -1,0 +1,1118 @@
+@charset "utf-8";
+
+body{
+	margin: 0;
+	padding: 0;
+}
+h2{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #006D5F;
+	opacity: .7;
+}
+:focus{
+	outline: none;
+}
+.boIndex{
+	background: #fff;
+}
+/*--------- log ------------------------------*/
+.fr_wrap_img{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.fr_wrap_log{
+	background: #006D5F;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.fr_wrap_img img{
+	width: 400px;
+	margin: 26.5% 20%;
+}
+.wrap_logo{
+	display: none;
+}
+.wrap_log{
+	width: 300px;
+	height: 500px;
+	margin: 40% auto 0;
+}
+.wrap_log input{
+	width: 300px;
+	height: 40px;
+	border-radius: 10px;
+	border: 0;
+	text-align: center;
+	font-size: 18px;
+}
+.wrap_log .btn_log{
+	width: 140px;
+	height: 90px;
+	float: left;
+	border-radius: 20px;
+	border: 0;
+	font-size: 20px;
+	color: #fff;
+	background: #2b9e8d;
+	cursor: pointer;
+}.btn_log:hover{
+	background: #1e564d;
+	transition: .2s;
+	color: #fff;
+}
+.wrap_log .btn_regis{
+	float: left;
+	width: 120px;
+	height: auto;
+	background: #fff;
+	padding: 35px 10px;
+	text-align: center;
+	color: #006D5F;
+	font-weight: bold;
+	border-radius: 20px;
+	margin-left: 20px;
+}
+.btn_regis:hover{
+	background: #2b9e8d;
+	transition: .2s;
+	color: #fff;
+}
+
+/*----------------------  nav --------------------------*/
+.wrap_main{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+nav{
+	width: 100%;
+	height: 65px;
+	background: #006D5F;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+}
+nav ul{
+	margin: 0;
+	list-style: none;
+}
+nav ul .btn_logout{
+	width: 100px;
+}
+nav ul li{
+	width: 286px;
+	height: 50px;
+	float: left;
+	padding: 10px 0 5px;
+}
+nav ul li:hover{
+	background: #2b9e8d;
+	opacity: .6;
+	transition: .4s;
+}
+nav ul .acNav{
+	background: #2b9e8d;
+}
+nav ul li div{
+	margin: 0 auto;
+	width: 25px;
+}
+nav ul li img{
+	width: 25px;
+}
+nav ul li p{
+	font-size: 10px;
+	margin: 2px 0;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+.wrap_profile,.wrap_cal,.wrap_list,.wrap_add_sub{
+	margin-top: 30px;
+	width: 100%;
+}
+/*--------------------- profile -------------------------*/
+.wrap_data_profile{
+	width: 100%;
+	height: 300px;
+}
+.box_data_profile{
+	float: left;
+	border: 3px solid #006D5F;
+	border-radius: 10px;
+	width: 610px;
+	height: 260px;
+	margin-left: 44px;
+	padding: 20px;
+}
+.box_data_profile p{
+	font-size: 32px;
+	margin: 15px 0;
+}
+.box_data_profile .btn_add_sub div{
+	width: 100px;
+	text-align: center;
+	padding: 20px;
+	float: right;
+	background: #006D5F;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	position: relative;
+	bottom: 60px
+}
+
+.wrap_data_sub{
+	padding: 20px;
+	margin-top: 30px;
+	width: 960px;
+	height: 310px;
+	border: 3px solid #006D5F;
+	border-radius: 10px;
+	margin-bottom: 100px;
+}
+.wrap_select_func{
+	float:right;
+}
+.wrap_select_func select{
+	width: 150px;
+	height: 30px;
+	border-radius: 10px;
+	background: #666;
+	color:#fff;
+	text-align: center;
+	padding: 2px 5px;
+}
+.wrap_select_func select:focus{
+    outline: none;
+}
+.wrap_data_sub table{
+	width: 100%;
+}
+.wrap_ta_data{
+	width: 100%;
+	height: 225px;
+	overflow-y: auto;
+}
+.wrap_ta_data td{
+	text-align: center;
+}
+.wrap_img{
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+.wrap_img img{
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+}
+.edit_img_st{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 180px;
+  color: rgba(0,0,0,0);
+  text-align: center;
+  font-size: 40px;
+  line-height: 1000%;
+  transition:.5s;
+    top: -305px;
+    cursor: pointer;
+}
+.edit_img_st:hover{
+  background: rgba(0,0,0,.6);
+  color: #fff;
+}
+.btn_edit_img{
+  width: 280px;
+  height: 280px;
+  border-radius: 180px;
+  position: absolute;
+  top: 0;
+  border: 0;
+  cursor: pointer;
+  
+}
+
+/*------------------------------- cal_sub --------------------------*/
+
+.wrap_select_data_cal{
+	width: 600px;
+	float: right;
+}
+.wrap_select_data_cal select{
+	width: 150px;
+	height: 30px;
+	border-radius: 10px;
+	background: #666;
+	color:#fff;
+	text-align: center;
+	padding: 2px 5px;
+}
+.wrap_select_data_cal button{
+	background: #006D5F;
+	color: #fff;
+	border-radius: 8px;
+	border: 0;
+	height: 30px;
+	padding: 2px 15px;
+	font-weight: bold;
+}
+.wrap_ta_cal{
+	width: 100%;
+	height: 381px;
+	border: 3px solid #006D5F;
+	border-radius: 0 0 15px 15px;
+}
+
+.wrap_ta_cal table{
+	width: 100%;
+	border: 0;
+	margin: 0;
+	border: none;
+}
+.wrap_ta_cal table thead{
+	background: #006D5F;
+	border: 0;
+	border: none;
+}
+.wrap_ta_cal table th{
+	text-align: center;
+	color: #fff;
+	border: 0;
+	margin: 0;
+	border: none;
+	padding: 3px 0;
+}
+.wrap_ta_cal table th span{
+	font-size: 12px;
+	position: relative;
+	left: 10px;
+}
+.wrap_ta_cal table tbody{
+	margin-bottom: 2px;
+}
+.wrap_ta_cal table td a{
+	text-decoration: none;
+	color: #fff;
+}
+.wrap_ta_cal table td span{
+	position: relative;
+    color: #fff;
+    text-align: center;
+}
+.wrap_ta_cal table .col_day{
+	background: #7c7c7c;
+	color: #fff;
+	text-align: center;
+	padding: 15px 0;
+	border-bottom: 1px solid #fff;
+}
+.wrap_ta_cal table .col_data{
+	background: #e2e2e2;
+	border-bottom: 1px solid #fff;
+	height: 38px;
+}
+
+.wrap_list_data_sub{
+	margin-top: 20px;
+	padding: 10px;
+	width: 980px;
+	height: 180px;
+	border: 3px solid #006D5F;
+	border-radius: 15px;
+}
+.wrap_list_data_sub_data{
+	height: 240px;
+	overflow-y: auto;
+}
+.wrap_list_data_sub_data .wrap_list_data_sub_data_div{
+	width: 460px;
+	float: left;
+	margin: 0 10px;
+}
+.wrap_list_data_sub_data table tr td{
+	text-align: center;
+}
+.wrap_ins_sub{
+	margin-top: 20px;
+	padding: 10px;
+	width: 980px;
+	height: 35px;
+	border: 3px solid #006D5F;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.wrap_ins_sub form{
+	float: left;
+
+}
+.btn_cal_sub{
+	text-align: center;
+	width: 170px;
+	background: #006D5F;
+    color: #fff;
+    border-radius: 8px;
+    border: 0;
+    height: 30px;
+    padding: 2px 15px;
+    font-weight: bold;
+	transition: .2s;
+	cursor: pointer;
+	margin-left: 20px;
+	float: right;
+}
+.btn_cal_sub:hover{
+	transition: .2s;
+	background: #02937e;
+}
+
+
+/*---------------------------------- list ------------------------------------*/
+
+.wrap_list_select_day{
+	width: 734px;
+}
+.wrap_list_select_day select{
+	width: 150px;
+	height: 30px;
+	border-radius: 10px;
+	background: #666;
+	color:#fff;
+	text-align: center;
+	padding: 2px 5px;
+}
+.wrap_list_select_day .btn_cal_sub{
+	float: none;
+}
+.wrap_ta_list{
+	width: 100%;
+	height: 576px;
+	overflow-y: auto;
+	border: 3px solid #006D5F;
+	border-radius: 0 0 15px 15px;
+	margin-bottom: 100px;
+}
+
+.wrap_ta_list table{
+	width: 100%;
+	border: 0;
+	margin: 0;
+	border: none;
+}
+.wrap_ta_list table thead{
+	background: #006D5F;
+	border: 0;
+	border: none;
+}
+.wrap_ta_list table th{
+	text-align: center;
+	color: #fff;
+	border: 0;
+	margin: 0;
+	border: none;
+	padding: 3px 0;
+}
+.wrap_ta_list table th span{
+	position: relative;
+	left: 13px;
+	font-size: 12px;
+}
+.wrap_ta_list table td{
+	width: 50px;
+	height: 38px;
+}
+.wrap_ta_list table td a{
+	text-decoration: none;
+}
+.wrap_ta_list table td span{
+	position: relative;
+	color: #fff;
+	text-align: center;
+	word-break: normal;
+}
+.wrap_ta_list table tbody{
+	margin-bottom: 2px;
+}
+.wrap_ta_list table .col_data{
+	background: #e2e2e2;
+	padding: 15px 0;
+	border-bottom: 1px solid #fff;
+}
+.wrap_list_detail_sub{
+	margin-top: 20px;
+	padding: 10px;
+	width: 980px;
+	height: 250px;
+	border: 3px solid #006D5F;
+	border-radius: 15px;
+}
+.wrap_cal_detail_sub{
+	margin-top: 20px;
+	padding: 10px;
+	width: 980px;
+	height: 320px;
+	border: 3px solid #006D5F;
+	border-radius: 15px;
+}
+.wrap_list_detail_sub .btn_cal_sub{
+	float: none;
+}
+
+/*------------------------------------------ add sub ----------------------------------------------*/
+
+.wrap_box_add_sub{
+	padding: 10px;
+	width: 980px;
+	height: 160px;
+	border: 3px solid #006D5F;
+	border-radius: 15px;
+}
+.wrap_box_add_sub input{
+	width: 855px;
+	background: #ccc;
+	border: 0;
+	padding: 8px 10px;
+	border-radius: 8px;
+	font-size: 24px;
+	text-align: center;
+}
+.wrap_box_add_sub input:focus{
+	outline: none;
+}
+.wrap_box_add_sub button{
+	background: #006D5F;
+	color: #fff;
+	border-radius: 8px;
+	border: 0;
+	height: 40px;
+	font-weight: bold;
+}
+.wrap_box_add_grade{
+	width: 220px;
+	float: right;
+}
+.wrap_box_add_grade select{
+	width: 150px;
+	height: 30px;
+	border-radius: 10px;
+	background: #666;
+	color:#fff;
+	text-align: center;
+	padding: 2px 5px;
+}
+.wrap_sub_comp{
+	margin-top: 20px;
+	padding: 10px;
+	width: 980px;
+	height: 450px;
+	border: 3px solid #006D5F;
+	border-radius: 15px;
+}
+.wrap_sub_comp table{
+	width: 100%;
+}
+.wrap_sub_comp table td{
+	text-align: center;
+}
+.wrap_sub_comp .wrap_sub_data{
+	height: 420px;
+	overflow-y: scroll;
+}
+.icon_delete{
+	width: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------register -------------------------------*/
+#register h2{
+	text-align: center;
+}
+#register input{
+	padding: 3px 7px;
+	border-radius: 8px;
+	font-size: 16px;
+	margin: 4px 0;
+	text-align: center;
+	width: 386px;
+	height: 25px;
+}
+#register select{
+	padding: 3px 7px;
+	border-radius: 8px;
+	font-size: 16px;
+	margin: 4px 0;
+	text-align: center;
+	width: 400px;
+	height: 40px;
+}
+#register button{
+	margin-top: 10px;
+	height: 40px;
+	background: #006D5F;
+	border-radius: 10px;
+	border: 0;
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+	width: 400px;
+	cursor: pointer;
+}
+#register button:hover{
+	background: #02937e;
+	transition: .2s;
+}
+.success{
+	color: green;
+}
+.error{
+	color: red;
+}
+/*------------ pop up ------------------------*/
+
+.button {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  background-color: #eee;
+  background-image: linear-gradient(top, #fff, #f0f0f0);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  color: #666;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.button:hover {
+  border-color: #999;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+.button:active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+}
+.overlay.light {
+  background: rgba(255, 255, 255, 0.5);
+}
+.overlay .cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 15% auto 0;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #666;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.light .popup {
+  border-color: #aaa;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+.popup h2 {
+  margin-top: 0;
+  color: #666;
+}
+.popup .close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+  transition: all 200ms;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666;
+}
+.popup .close:hover {
+  opacity: 1;
+}
+.popup .content {
+  max-height: 400px;
+  overflow: auto;
+}
+.popup p {
+  margin: 0 0 1em;
+}
+.popup p:last-child {
+  margin: 0;
+}
+
+.input_unit{
+	width: 50px;
+}
+.wrap_pop{
+	width: 1000px;
+	margin: 0 auto;
+}
+#register .wrap_pop{
+	width: 400px;
+	margin: 0 auto;
+}
+
+/*----------------------------------- Backoffice -------------------------------------*/
+
+/*---addsub------*/
+.wrap_add_sub_1,.wrap_add_sub_2{
+	padding: 10px;
+	width: 480px;
+	height: auto;
+	float: left;
+}
+#add_sub input,#add_sub select,.edit_sub input,.edit_sub select{
+	padding: 4px 7px;
+	width: 300px;
+	border-radius: 7px;
+	height: 20px;
+	margin: 5px 0;
+}
+#add_sub select,.edit_sub select{
+	height: 30px;
+	width: 320px;
+}
+#add_sub button,.edit_sub button{
+	float: left;
+	width: 100%;
+	height: 30px;
+	border-radius: 10px;
+	border: 0;
+	font-weight: bold;
+	color: #fff;
+	background: #006D5F;
+	margin: 5px 0;
+}
+
+.wrap_add_ta_list{
+	float: left;
+	width: 100%;
+	height: auto;
+	border: 3px solid #006D5F;
+}
+
+.wrap_add_ta_list table{
+	width: 100%;
+	border: 0;
+	margin: 0;
+	border: none;
+}
+.wrap_add_ta_list table thead{
+	background: #006D5F;
+	border: 0;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+}
+.wrap_add_ta_list table th{
+	text-align: center;
+	color: #fff;
+	border: 0;
+	margin: 0;
+	border: none;
+	padding: 3px 0;
+}
+.wrap_add_ta_list table th span{
+	position: relative;
+	left: 13px;
+	font-size: 12px;
+}
+.wrap_add_ta_list table td{
+	border: 1px solid #fff;
+}
+.wrap_add_ta_list table td div{
+	text-align: center;
+	padding: 5px 0;
+}
+.wrap_add_ta_list table td span{
+	position: relative;
+	left: 10px;
+	color: #fff;
+	text-align: center;
+}
+.wrap_add_ta_list table tbody{
+	margin-bottom: 2px;
+}
+.wrap_add_ta_list table .col_data{
+	background: #e2e2e2;
+	padding: 15px 0;
+	border-bottom: 1px solid #fff;
+}
+.col_emp{
+	height: 38px;
+}
+.wrap_add_ta_list .box_check{
+	height: 30px;
+}
+.wrap_sub_b{
+	margin-top: 50px;
+}
+.wrap_sub_b table,.wrap_sub_b table tr,.wrap_sub_b table tr td,.wrap_sub_b table tr th{
+	border-collapse: collapse;border: 1px solid black;
+}
+.wrap_sub_b table tr td{
+	padding: 5px 10px;
+	text-align: center;
+}
+
+.wrap_func{
+	margin-top: 20px;
+	width: 100%;
+	height: 50px;
+}
+/*------------------------ pace ----------------------------*/
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #006D5F;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+@media screen and (max-width: 768px) {
+	.displayN{
+		display: none;
+	}
+
+	.wrap_main{
+		width: 100%;
+	}
+	.wrap_profile{
+		float: left;
+	}
+
+	.wrap_data_profile{
+		height: auto;
+		margin-top: 20px;
+	}
+	.wrap_img{
+		margin: 0 auto;
+		float: none;
+	}
+	.wrap_img img{
+		width: 100%;
+	}
+	.box_data_profile{
+		width: 89%;
+		margin: 20px 2.5% 0;
+		height: auto;
+		padding: 2.5%;
+		border: .5%;
+	}
+	.box_data_profile p{
+		font-size: 16px;
+		margin: 0;
+	}
+	.box_data_profile .btn_add_sub div{
+		float: none;
+		position: inherit;
+	}
+	.wrap_data_sub{
+		float: left;
+		width: 89%;
+		margin: 15px 2.5% 70px;
+		overflow-x: auto;
+		padding: 2.5%;
+		border: .5%;
+	}
+    nav{
+		position: fixed;
+		width: 100%;
+	}
+	nav .wrap_main{
+		width: 100%;
+	}
+	nav .wrap_main ul{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	nav .wrap_main ul .btn_logout{
+		width: 25%;
+	}
+	nav .wrap_main ul li{
+		width: 25%;
+	}
+	nav .wrap_main ul li:hover{
+		background: #2b9e8d;
+		opacity: .6;
+		transition: .4s;
+	}
+	nav .wrap_main ul .acNav{
+		background: #2b9e8d;
+	}
+	nav .wrap_main ul li div{
+		margin: 0 auto;
+		width: 25px;
+	}
+	nav .wrap_main ul li img{
+		width: 25px;
+	}
+	nav .wrap_main ul li p{
+		font-size: 10px;
+		margin: 2px 0;
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+	}
+	.wrap_data_wrap{
+		width: 1000px;
+	}
+	.wrap_profile, .wrap_cal, .wrap_list, .wrap_add_sub{
+		margin-top: 0;
+	}
+
+	/*-------------- add sub pass ------------------------------*/
+	.wrap_box_add_sub{
+		float: left;
+		width: 90%;
+		margin: 15px 2.5% 0;
+		padding: 2.5%;
+		height: 240px;
+	}
+	.wrap_box_add_sub input{
+		width: 95%;
+	}
+	.wrap_box_add_sub button{
+		width: 100%;
+	}
+	.wrap_sub_comp{
+		float: left;
+		width: 90%;
+		margin: 15px 2.5% 80px;
+		padding: 2.5%;
+	}
+	.wrap_sub_comp .wrap_sub_data{
+		height: 400px;
+	}
+
+
+
+	/*--------------------------- list sub -------------------------*/
+	.wrap_list_select_day{
+		float: left;
+		width: 90%;
+		margin: 15px 2.5% 0;
+		padding: 2.5%;
+	}
+	.wrap_list_select_day select{
+		width: 100%;
+	}
+	.title_list{
+		margin-left: 2.5%;
+	}
+	.wrap_ta_list{
+		width: 95%;
+		margin: 0 2.5% 80px;
+	}
+	.wrap_ta_list_wrap{
+		width: 1000px;
+		overflow-x: auto;
+	}
+
+	/*----------------------------  cal  sub -------------------------------*/
+	.wrap_ta_cal{
+		width: 93%;
+		margin: 0 2.5% 20px;
+		overflow-x: auto;
+		height: 398px;
+		border: 1%;
+	}
+	.wrap_select_data_cal{
+		float: left;
+		width: 90%;
+		margin: 15px 2.5% 0;
+		padding: 2.5%;
+	}
+	.wrap_select_data_cal select,.wrap_select_data_cal button{
+		width: 100%;
+	}
+	.wrap_ta_cal_wrap{
+		width: 1000px;
+		overflow-x: auto;
+	}
+	.wrap_ins_sub{
+		width: 89%;
+		margin: 0 2.5% 80px;
+		border: 1%;
+		height: 190px;
+		padding:2.5%
+	}
+	.wrap_ins_sub form{
+		float: none;
+		
+	}
+	.btn_cal_sub{
+		width: 100%;
+		margin: 0;
+		float: left;
+		margin: 5px 0;
+		text-align: center;
+		padding:3px 0;
+	}
+
+
+	.popup{
+		margin: 40% auto 0;
+	}
+	.wrap_pop{
+		width: 100%;
+	}
+	.wrap_list_detail_sub{
+		width: 90%;
+		margin: 15px 2.5% 0;
+		padding: 2.5%;
+		height: 200px;
+	}
+	.wrap_list_data_sub_data{
+		height: 200px;
+		width: 100%
+	}
+	.wrap_cal_detail_sub_wrap_over{
+		width: 100%;
+		overflow-y: auto;
+		height: 180px;
+	}
+	.wrap_cal_detail_sub_wrap{
+		width: 1000px;
+	}
+	.wrap_cal_detail_sub{
+		width: 90%;
+		margin: 15px 2.5% 0;
+		padding: 2.5%;
+		height: 370px;
+	}
+
+	/*--------------------- index ---------------------------*/
+	.fr_wrap_img{
+		display: none;
+	}
+	.fr_wrap_log{
+		width: 100%;
+		height: 100%
+	}
+	.wrap_logo{
+		display: block;
+		margin: 10% auto 0;
+		width: 250px;
+		height: 250px;
+	}
+	.wrap_logo img{
+		width: 100%;
+	}
+	.wrap_log{
+		margin: 0 auto;
+		width: 80%;
+		height: 60%;
+		padding: 5% 0 50%;
+	}
+	.wrap_log input{
+		width: 100%;
+	}
+	.wrap_log .btn_log{
+		width: 45%;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.wrap_log .btn_regis{
+		width: 40%;
+		margin-left: 10%;
+		padding: 35px 2.5%;
+	}
+	#register input{
+		width: 96%;
+		padding: 2%;
+	}
+	#register select{
+		width: 96%;
+		padding: 2%;
+	}
+	#register button{
+		width: 100%;
+	}
+	#register .popup{
+		margin: 10% auto;
+	}
+	#register .wrap_pop{
+		width: 100%;
+	}
+	.boIndex{
+		background: #006D5F;
+	}
+}
